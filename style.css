@@ -1,0 +1,524 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.side{
+    position: fixed;
+    top: 170px;
+    right: -160px;
+    width: 200px;
+    z-index: 1;
+
+}
+.side ul{
+    list-style-type: none;
+
+    
+}
+.side ul li{
+    height: 50px;
+    align-items: center;
+    display: flex;
+    background: linear-gradient(to right, rgb(136, 0, 255) , rgb(162, 68, 17));  
+    transition-duration: 200ms;
+    margin: 2px;
+    border-top-left-radius: 50% ;
+
+    border-bottom-left-radius: 50%
+    ;
+
+}
+
+.side ul li div{
+    flex: 1;
+    cursor: pointer;
+    
+}
+.side ul li div:nth-child(1) a{
+    background-color: rgb(61,19,122);
+    padding: 15px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    
+    color: white;
+}
+
+.side ul li div:nth-child(2){
+    cursor: pointer;
+    flex: 3;
+}
+.side ul li div:nth-child(2) {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+
+}
+.side ul li:hover{
+    transform: translate(-155px,0);
+    transition-duration: 300ms;
+}
+
+.first{
+    background-color: rgb(40,0,113);
+   text-align: center;
+    top: 0;
+    right: 0;
+    width: 91.7%;
+    display: flex;
+    height: 42px;
+    list-style-type: none;
+    position: absolute;
+}
+
+.first  a{
+    text-decoration: none;
+    color: white;
+   
+
+}
+.first .one{
+    flex: 1;
+
+}
+.one a{
+    float: left;
+    display: block;
+    padding: 12px 15px;
+    text-align: center;
+}
+.one a:hover{
+    color: orange;
+    background-color: rgb(102 153 204 / 0.4);
+}
+.first .two{
+    flex: 1;
+}
+.first .two ul{
+    float: right;
+}
+.first .two ul a{
+    padding: 10px 10px;
+    background-color: rgb(94, 64, 149);
+    line-height: 42px;
+}
+.first .two ul a:hover{
+    color: rgb(40,0,113);
+    background-color:white;
+}
+#lang{
+    padding: 7px 13px;
+    border-radius: 10px;
+
+}
+.login{
+    padding: 11px 14px;
+    background-color: yellow;
+}
+.login:hover{
+    filter: blur(.1px);
+}
+
+.nav{
+    width: 100%;
+    height: 78px;
+    display: flex;
+    align-items: end;
+    z-index: 1;
+}
+.log img{
+    width: 72%;
+    height: 30px;
+    margin-bottom: 13px;
+    cursor: pointer;
+    margin-left: 20px;
+
+}
+.nav>div{
+    padding: 5px;
+
+}
+.nav>div:nth-child(1){
+    padding: 5px;
+    flex: 1;
+    
+}
+.nav>div:nth-child(2){
+    flex: 10;
+}
+.nav>div:nth-child(3){
+    flex: 2.2;
+}
+.nav>div:nth-child(3) i{
+  
+    padding: 5px 7px;
+    background-color: rgb(111, 66, 193);
+    border-radius: 4px;
+  
+    cursor: pointer;
+}
+.se{
+    background-color: rgb(233,229,241);
+    border: 0;
+    padding: 3px 20px ;
+}
+.menu{
+    display: flex;
+    height: 26px;
+    align-items: center;
+    
+    width: 49%;
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    
+}
+.menu li{
+    flex: 1;
+    height: 35px ;
+    line-height: 35px;
+
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px 5px;
+}
+.menu a:hover{
+    background-color: rgb(0 0 0 / 0.1);
+    color: dodgerblue;
+    border-radius: 10px;
+}
+.second{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+   
+   
+}
+.second>section{
+    height: 350px;
+    width: 300%;
+    position: relative;
+    animation: myslid 7s infinite alternate ease-in-out;
+}
+.second> section img{
+    width: 33.33%;
+    height: 350px;
+    float: left;
+}
+@keyframes myslid{
+    0%{left:0%}
+    33.3%{left: 0%;}
+    36%{left:-100%}
+    69.3%{left:-100%}
+    71%{left:-200%}
+    100%{left:-200%}
+}
+.third{
+    height: 22px;
+}
+.third marquee{
+    color: rgb(40,0,113);
+    background-color: ghostwhite;
+    font-weight: 600;
+    font-size: 20px;
+}
+.fourth{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(240,247,250);
+}
+.headi{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.headi h1{
+    font-size: 28px;
+    font-weight: 900;
+    color: rgb(16, 16, 122);
+}
+.headi span{
+    font-weight: 100;
+}
+.four{
+    columns: 4;
+   
+    width: 86%;
+}
+.four a{
+display: flex;
+text-decoration: none;
+    width: 100%;
+    background-color: white;
+   margin-bottom: 3px;
+    height: auto;
+    align-items: center;
+    color: rgb(16, 16, 122);
+    transition: color .2s ease-in-out, box-shadow .2s ease-in-out;
+    
+   
+}
+.four a:hover{
+    box-shadow: inset 450px 0 0 0 rgb(16, 16, 122);
+    color: #fff;
+    
+   
+}
+.four a:hover i{
+    background-color: rgb(54, 54, 132);
+}
+.four a i{
+    background-color: rgb(233, 229, 241);
+    padding: 8px 9px;
+    margin: 10px;
+    border-radius: 50%;
+    flex: 1;
+    
+}
+.four a span{
+   
+    flex: 12;
+}
+.fifth{
+    width: 100%;
+    height: 310px;
+    background-color: rgb(247,247,247);
+}
+
+
+
+
+		.div
+		{
+			width:69%;
+			height: 270px;
+			overflow: hidden;
+            padding-top: 35px;
+		}
+		.div .section
+		{
+			width:100%;
+			height:160px;
+			position: relative;
+            display: flex;
+			
+		}
+		.div .section .box
+		{
+
+            flex: 1;
+            background-color: white;
+            margin: 4px;
+			width: 20%;
+			height :160px;
+		}
+        .box i{
+            color: #1e4291;
+            font-size: 35px;
+            display: block;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .box h1{
+            font-size: 24px;
+            text-align: center;
+        }
+
+	
+
+
+.six{
+    width: 100%;
+    height: 590px;
+    background-color: rgb(240, 247, 250);
+}
+.sixmenu{
+    width: 86%;
+    columns: 4;
+    margin-top: 30px;
+}
+.sixmenu a{
+    display: flex;
+    text-decoration: none;
+    color: rgb(16,16,122) ;
+    background-color: white;
+    margin-bottom: 3px;
+    height: auto;
+    align-items: center;
+    transition: color .2s ease-in-out, box-shadow .2s ease;
+}
+.sixmenu a:hover{
+    box-shadow: inset 320px 0 0 0 rgb(16, 16, 122);
+    color: #fff;
+   
+}
+.sixmenu a:hover i{
+    background-color: rgb(54, 54, 132);
+}
+.sixmenu a i{
+    background-color: rgb(233, 229, 241);
+    padding: 8px 9px;
+    margin: 10px;
+    border-radius: 50%;
+    flex: 1;
+}
+.sixmenu a span{
+    flex: 12;
+}
+.seven{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(247, 247, 247);
+}
+.sevencon{
+    width: 70%;
+    height: 553px;
+    margin-top: 20px;
+    display: flex;
+}
+.box4{
+    margin: 5px;
+    flex: 1;
+   background-color: white;
+   
+    width: 20%;
+}
+.box4 p{
+    font-size: 19px;
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+.box4 a{
+    display: flex;
+    padding: 9px;
+    text-decoration: none;
+    margin-bottom: 1px;
+border-bottom: 1px solid #cfbfbf;
+    transition: color .2s ease-in-out, box-shadow .2s ease;
+}
+.box4 a:hover{
+    box-shadow: inset 320px 0 0 0 rgb(16, 16, 122);
+    color: #fff;
+}
+.box4 a span{
+    flex: 1;
+}
+.box4 i{
+    flex: 0;
+}
+
+.box4 img{
+    width: 100%;
+}
+
+.eight{
+    width: 100%;
+    height: 790px;
+    background-color: rgb(240, 247, 250);
+}
+.eightcon{
+    width: 70%;
+    display: flex;
+    height: 632px;
+   
+}
+.e1{
+    flex: 1;
+    width: 100px;
+    
+    margin: 4px;
+
+}
+.e2{
+    background-color: white;
+    height: 200px;
+    
+}
+.e2{
+    text-align: center;
+    margin-bottom: 8px;
+}
+.e2 i{
+    font-size: 40px;
+    margin-top: 25px;
+    background-color: rgb(233, 229, 241);
+    padding: 25px 25px;
+    color: #1e4291;
+    border-radius: 67% 63% 66% 82% / 72% 66% 26% 26%;
+    
+}
+.e2 i:hover{
+    animation: ani3 1s infinite alternate ease-in-out;
+    background-color: rgb(54, 54, 132);
+    color: white;
+    
+}
+
+@keyframes ani3
+{
+    from{}
+    to{border-radius: 17% 33% 16% 72% / 22% 26% 76% 86%;}
+
+}
+.e2 p{
+    font-size: 17px;
+    margin-top: 20px;
+
+}
+.nine{
+    background-color: rgb(40,0,113);
+    width: 100%;
+    height: 82px;
+}
+.nine p{
+    font-size: 15px;
+    padding-top: 25px;
+    color: white;
+    line-height: 20px;
+}
+.nine p span{
+    background-color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: rgb(40, 0, 113);
+}
+
+.ten{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.ten1{
+    flex: 1;
+    }
+.ten1 img{
+    width: 17%;
+    cursor: pointer;
+}
+.ten2{
+    flex: 1;
+}
+.ten2 a{
+    padding: 40px;
+    line-height: 50px;
+    font-size: 18px;
+    color: black;
+}
+.ten2 a:hover{
+    color: rgb(77, 201, 226);
+}
+
+.last{
+    padding: 10px 10px;
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
